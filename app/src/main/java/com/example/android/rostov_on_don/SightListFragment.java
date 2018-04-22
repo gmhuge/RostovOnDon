@@ -9,9 +9,9 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class ShopsFragment extends Fragment {
-
-    public ShopsFragment() {
+public class SightListFragment extends Fragment {
+    private ArrayList<Sight> sights;
+    public SightListFragment() {
     }
 
     @Override
@@ -19,20 +19,26 @@ public class ShopsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.sight_list, container, false);
 
-        final ArrayList<Sight> sights = new ArrayList<>();
+        Bundle bundle = this.getArguments();
 
-        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
-        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
-        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
-        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
-        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
-        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
-        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
-        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
-        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
-        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
+        sights = (ArrayList<Sight>) getArguments().getSerializable("sights");
+        int colorResourceIdEven = bundle.getInt("color_even");
+        int colorResourceIdNotEven = bundle.getInt("color_not_even");
 
-        SightAdapter adapter = new SightAdapter(getActivity(), sights, R.color.category_family, R.color.category_family2);
+        // final ArrayList<Sight> sights = new ArrayList<>();
+/*
+        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
+        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
+        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
+        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
+        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
+        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
+        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
+        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
+        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
+        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
+*/
+        SightAdapter adapter = new SightAdapter(getActivity(), sights, colorResourceIdEven, colorResourceIdNotEven);
         ListView listView = rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
 

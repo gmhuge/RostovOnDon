@@ -1,10 +1,20 @@
 <resources>
     <string name="app_name">Rostov-on-Don</string>
 
+    <string name="shops_name">Shops</string>
+    <string name="monuments_name">Monuments</string>
+
+
     <string name="name1">Name1</string>
     <string name="address1">Address1</string>
     <string name="phone1">Phone1</string>
 
-    <string name="shops_name">Shops</string>
+    <string name="name2">Name2</string>
+    <string name="address2">Address2</string>
+    <string name="phone2">Phone2</string>
+
+    <string name="name3">Name3</string>
+    <string name="address3">Address3</string>
+    <string name="phone3">Phone3</string>
 
 </resources>
