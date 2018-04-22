@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Rostov-on-Don</string>
+
+    <string name="name1">Name1</string>
+    <string name="address1">Address1</string>
+    <string name="phone1">Phone1</string>
+
+    <string name="shops_name">Shops</string>
+
+</resources>
