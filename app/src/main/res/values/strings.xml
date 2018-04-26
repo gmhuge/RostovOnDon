@@ -5,16 +5,24 @@
     <string name="monuments_name">Monuments</string>
 
 
-    <string name="name1">Name1</string>
-    <string name="address1">Address1</string>
-    <string name="phone1">Phone1</string>
+    <string name="name1">Shop</string>
+    <string name="address1">Address of Shop</string>
+    <string name="working_hours1">8:00 - 24:00-123456789012345678901234567890</string>
+    <string name="type1">Store</string>
 
-    <string name="name2">Name2</string>
-    <string name="address2">Address2</string>
-    <string name="phone2">Phone2</string>
+    <string name="name2">Monument</string>
+    <string name="address2">Address of Monument</string>
+    <string name="dedicated2">Peter I</string>
+    <string name="buit2">1837</string>
 
-    <string name="name3">Name3</string>
-    <string name="address3">Address3</string>
-    <string name="phone3">Phone3</string>
+    <string name="name3">Church</string>
+    <string name="address3">Address of Church</string>
+    <string name="confession3">Russian Orthodox Church</string>
+    <string name="buit3">1993</string>
+
+    <string name="name4">Restaurant</string>
+    <string name="address4">Address3</string>
+    <string name="working_hours4">11:00 - 03:00</string>
+    <string name="cuisine4">Chinese</string>
 
 </resources>

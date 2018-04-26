@@ -7,19 +7,33 @@ public class Sight implements Serializable{
 
     private int mSightNameId;
     private int mSightAddressId;
-    private int mSightPhoneId;
+    private int mSightWorkHoursId;
+    private int mSightBuiltId;
+
+    private int mSighDedicatedId;
+    private int mSightConfessionId;
+    private int mSightTypeId;
+    private int mSightCuisineId;
+
+
     private int mSightImageId;
 
+    //private int m
 
 
 
-    public Sight(int sightNameId, int sightAddressId, int sightPhoneId,
-                 int sightImageId) {
+    public Sight(int sightNameId, int sightAddressId, int sightWorkHoursId,
+                 int sightBuiltId, int sightDedicatedId, int sightConfessionId,
+                 int sightTypeId, int sightCuisineId, int sightImageId) {
 
         mSightNameId = sightNameId;
         mSightAddressId = sightAddressId;
-        mSightPhoneId = sightPhoneId;
-
+        mSightWorkHoursId = sightWorkHoursId;
+        mSightBuiltId = sightBuiltId;
+        mSighDedicatedId = sightDedicatedId;
+        mSightConfessionId = sightConfessionId;
+        mSightTypeId = sightTypeId;
+        mSightCuisineId = sightCuisineId;
 
         mSightImageId = sightImageId;
     }
@@ -33,8 +47,26 @@ public class Sight implements Serializable{
         return mSightAddressId;
     }
 
-    public int getSightPhoneId() {
-        return mSightPhoneId;
+    public int getSightWorkHoursId() {
+        return mSightWorkHoursId;
+    }
+
+    public int getSightBuiltId() {
+        return mSightBuiltId;
+    }
+
+    public int getSightDedicatedId() {return mSighDedicatedId;}
+
+    public int getSightConfessionId() {
+        return mSightConfessionId;
+    }
+
+    public int getSightTypeId() {
+        return mSightTypeId;
+    }
+
+    public int getSightCuisineId() {
+        return mSightCuisineId;
     }
 
     public int getSightImageId() {
@@ -42,4 +74,5 @@ public class Sight implements Serializable{
     }
 
 }
+
 

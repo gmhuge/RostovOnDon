@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.TableRow;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -41,14 +42,30 @@ public class SightAdapter extends ArrayAdapter<Sight> {
 
         Sight currentSight = getItem(position);
 
+
         TextView NameTextView = listItemView.findViewById(R.id.name_text_view);
         NameTextView.setText(currentSight.getSightNameId());
+
+  /*
 
         TextView AddressTextView = listItemView.findViewById(R.id.address_text_view);
         AddressTextView.setText(currentSight.getSightAddressId());
 
-        TextView PhoneTextView = listItemView.findViewById(R.id.phone_text_view);
-        PhoneTextView.setText(currentSight.getSightPhoneId());
+        TextView WorkHoursTextView = listItemView.findViewById(R.id.work_hours_text_view);
+        WorkHoursTextView.setText(currentSight.getSightWorkHoursId());
+
+
+    */
+
+
+
+        setText(listItemView, R.id.address_text_view, currentSight.getSightAddressId(), R.id.address_row);
+        setText(listItemView, R.id.work_hours_text_view, currentSight.getSightWorkHoursId(), R.id.work_hours_row);
+        setText(listItemView, R.id.was_built_text_view, currentSight.getSightBuiltId(), R.id.was_built_row);
+        setText(listItemView, R.id.dedicated_text_view, currentSight.getSightDedicatedId(), R.id.dedicated_row);
+        setText(listItemView, R.id.confession_text_view, currentSight.getSightConfessionId(), R.id.confession_row);
+        setText(listItemView, R.id.type_text_view, currentSight.getSightTypeId(), R.id.type_row);
+        setText(listItemView, R.id.cuisine_text_view, currentSight.getSightCuisineId(), R.id.cuisine_row);
 
 
         ImageView imageView = listItemView.findViewById(R.id.image);
@@ -60,5 +77,19 @@ public class SightAdapter extends ArrayAdapter<Sight> {
         textContainer.setBackgroundColor(color);
 
         return listItemView;
+    }
+
+    private void setText (View view, int textViewId, int textId, int tableRowId) {
+        TableRow raw = view.findViewById(tableRowId);
+        if (textId < 0) {
+            raw.setVisibility(View.GONE);
+        }
+        else {
+            TextView text = view.findViewById(textViewId);
+            text.setText(textId);
+            raw.setVisibility(View.VISIBLE);
+
+        }
+
     }
 }

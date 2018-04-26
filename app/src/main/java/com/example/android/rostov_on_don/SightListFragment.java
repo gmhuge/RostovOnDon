@@ -25,19 +25,6 @@ public class SightListFragment extends Fragment {
         int colorResourceIdEven = bundle.getInt("color_even");
         int colorResourceIdNotEven = bundle.getInt("color_not_even");
 
-        // final ArrayList<Sight> sights = new ArrayList<>();
-/*
-        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
-        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
-        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
-        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
-        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
-        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
-        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
-        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
-        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
-        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
-*/
         SightAdapter adapter = new SightAdapter(getActivity(), sights, colorResourceIdEven, colorResourceIdNotEven);
         ListView listView = rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);

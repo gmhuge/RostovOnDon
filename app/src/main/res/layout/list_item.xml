@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
-    android:layout_height="@dimen/list_item_height"
+    android:layout_height="wrap_content"
     android:background="@color/tan_background"
+    android:id="@+id/text_container"
     android:minHeight="@dimen/list_item_height">
 
     <ImageView
         android:id="@+id/image"
         android:layout_width="@dimen/list_item_height"
-        android:layout_height="@dimen/list_item_height" />
-
-    <RelativeLayout
-        android:id="@+id/text_container"
-        android:layout_width="match_parent"
         android:layout_height="@dimen/list_item_height"
-        android:layout_alignParentBottom="true"
+        android:src="@drawable/mega1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/image"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@id/image"
         android:orientation="vertical"
         android:paddingLeft="16dp">
 
@@ -28,34 +28,151 @@
             android:id="@+id/name_text_view"
             android:layout_width="match_parent"
             android:layout_height="44dp"
-            android:layout_weight="1"
-            android:gravity="bottom"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@android:color/black"
             android:textStyle="bold"
             tools:text="Name1" />
 
-        <TextView
-            android:id="@+id/address_text_view"
-            android:layout_width="match_parent"
-            android:layout_height="44dp"
-            android:layout_below="@id/name_text_view"
-            android:layout_weight="1"
-            android:gravity="top"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/black"
-            tools:text="Address1" />
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/phone_text_view"
-            android:layout_width="match_parent"
-            android:layout_height="44dp"
-            android:layout_below="@id/address_text_view"
-            android:layout_weight="1"
-            android:gravity="top"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/black"
-            tools:text="Phone1" />
+            <TableRow
+                android:id="@+id/address_row"
+                android:visibility="visible"
+                android:layout_height="match_parent">
 
-    </RelativeLayout>
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Address:" />
+
+                <TextView
+                    android:id="@+id/address_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="1"
+                    tools:text="Address1111111111111111111111"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/work_hours_row"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <TextView
+                    android:text="Work hours.:"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/work_hours_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="1"
+                    tools:text="Phone111111111111111111111111111111" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/was_built_row"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <TextView
+                    android:text="Was built:"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/was_built_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="1"
+                    tools:text="19911111111111111111111111111111110" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/dedicated_row"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <TextView
+                    android:text="Dedicated:"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/dedicated_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="1"
+                    tools:text="Blah blah blah1111111111111111111111111111" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/confession_row"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <TextView
+                    android:text="Confession:"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/confession_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="1"
+                    tools:text="Smthn1111111111111111111111111111111" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/type_row"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <TextView
+                    android:text="Type:"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/type_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="1"
+                    tools:text="Goods1111111111111111111111" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/cuisine_row"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <TextView
+                    android:text="Cuisine:"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/cuisine_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="1"
+                    tools:text="Chineese" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
 </RelativeLayout>

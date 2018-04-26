@@ -5,12 +5,15 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.view.ViewGroup;
+import android.widget.TabWidget;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
 public class CategoryAdapter extends FragmentPagerAdapter {
 
-//    private final int CATEGORY_COUNT = 4;
+
 
     private Context mContext;
     private ArrayList<Category> mCategories;
@@ -21,6 +24,14 @@ public class CategoryAdapter extends FragmentPagerAdapter {
         mContext = context;
         mCategories = categories;
 
+
+        /*
+        final TabWidget tabWidget = get;
+        for (int i = 0; i < tabWidget.getChildCount(); i++) {
+            final ViewGroup tab = (ViewGroup) tabWidget.getChildAt(i);
+            final TextView tabTextView = (TextView) tab.getChildAt(1); // Magic number
+            tabTextView.setTextSize(8);
+ */
     }
 
     @Override
@@ -33,11 +44,6 @@ public class CategoryAdapter extends FragmentPagerAdapter {
         sights = currentCategory.getSights();
         categoryName = currentCategory.getCategoryName();
 
-    /*
-        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
-        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
-        sights.add((new Sight(R.string.name1, R.string.address1, R.string.phone1, R.drawable.mega1)));
-    */
         Fragment CurrentFragment;
 
         Bundle bundle = new Bundle();
@@ -45,30 +51,6 @@ public class CategoryAdapter extends FragmentPagerAdapter {
 
         bundle.putInt("color_even", currentCategory.getColorResourceIdEven());
         bundle.putInt("color_not_even", currentCategory.getColorResourceIdNotEven());
-
-/*
-
-        switch (position) {
-            case 0: CurrentFragment = new ShopsFragment(); break;
-            case 1: CurrentFragment = new ShopsFragment(); break;
-            case 2: CurrentFragment = new ShopsFragment(); break;
-            case 3: CurrentFragment = new ShopsFragment(); break;
-
-            default: CurrentFragment = new ShopsFragment(); break;
-        }
-*/
-
-/*
-        if (position == 0) {
-            return new ShopsFragment();
-        } else if (position == 1) {
-            return new ShopsFragment();
-        } else if (position == 2) {
-            return new ShopsFragment();
-        } else {
-            return new ShopsFragment();
-        }
-*/
 
         CurrentFragment = new SightListFragment();
 
@@ -79,27 +61,12 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
 
-
-        //return CATEGORY_COUNT;
         return mCategories.size();
     }
 
     @Override
     public CharSequence getPageTitle(int position) {
 
-        /*
-
-        if (position == 0) {
-            return mContext.getString(R.string.shops_name);
-        } else if (position == 1) {
-            return mContext.getString(R.string.shops_name);
-        } else if (position == 2) {
-            return mContext.getString(R.string.shops_name);
-        } else {
-            return mContext.getString(R.string.shops_name);
-        }
-    */
-        //  return categoryName;
 
         Category currentCategory = mCategories.get(position);
         return currentCategory.getCategoryName();
