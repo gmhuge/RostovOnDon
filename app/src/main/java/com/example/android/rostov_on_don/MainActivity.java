@@ -20,17 +20,20 @@ public class MainActivity extends AppCompatActivity {
 
         final ArrayList<Sight> sights1 = new ArrayList<>();
         sights1.add((new Sight(R.string.name1, R.string.address1, R.string.working_hours1,
-                    -1, -1, -1, R.string.type1, -1, R.drawable.mega1)));
+                    -1, -1, -1, R.string.type1, -1, R.drawable.shop1)));
         sights1.add((new Sight(R.string.name1, R.string.address1, R.string.working_hours1,
-                -1, -1, -1, R.string.type1, -1, R.drawable.mega1)));
+                -1, -1, -1, R.string.type1, -1, R.drawable.shop1)));
         sights1.add((new Sight(R.string.name1, R.string.address1, R.string.working_hours1,
-                -1, -1, -1, R.string.type1, -1, R.drawable.mega1)));
+                -1, -1, -1, R.string.type1, -1, R.drawable.shop1)));
         sights1.add((new Sight(R.string.name1, R.string.address1, R.string.working_hours1,
-                -1, -1, -1, R.string.type1, -1, R.drawable.mega1)));
+                -1, -1, -1, R.string.type1, -1, R.drawable.shop1)));
         sights1.add((new Sight(R.string.name1, R.string.address1, R.string.working_hours1,
-                -1, -1, -1, R.string.type1, -1, R.drawable.mega1)));
+                -1, -1, -1, R.string.type1, -1, R.drawable.shop1)));
         sights1.add((new Sight(R.string.name1, R.string.address1, R.string.working_hours1,
-                -1, -1, -1, R.string.type1, -1, R.drawable.mega1)));
+                -1, -1, -1, R.string.type1, -1, R.drawable.shop1)));
+        sights1.add((new Sight(R.string.name1, R.string.address1, R.string.working_hours1,
+                -1, -1, -1, R.string.type1, -1, R.drawable.shop1)));
+
 
 
         final ArrayList<Sight> sights2 = new ArrayList<>();
