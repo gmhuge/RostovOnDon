@@ -25,4 +25,117 @@
     <string name="working_hours4">11:00 - 03:00</string>
     <string name="cuisine4">Chinese</string>
 
+
+
+    <string name="shop_name1">Megacenter Gorizont</string>
+    <string name="shop_address1">Mikhaila Nagibina St., 32/2</string>
+    <string name="shop_working_hours1">10:00 - 22:00</string>
+    <string name="shop_type1">Shopping and entertainment center</string>
+
+    <string name="shop_name2">Central Market</string>
+    <string name="shop_address2">Budyonnovskiy Ave., 12</string>
+    <string name="shop_working_hours2">8:00 - 18:00</string>
+    <string name="shop_type2">Trade market</string>
+
+    <string name="shop_name3">MEGA</string>
+    <string name="shop_address3">Aksay Ave., 23</string>
+    <string name="shop_working_hours3">10:00 - 22:00</string>
+    <string name="shop_type3">Shopping and entertainment center</string>
+
+    <string name="shop_name4">Cooperator of Don</string>
+    <string name="shop_address4">Voroshilovskiy Ave., 91/1</string>
+    <string name="shop_working_hours4">24 hours</string>
+    <string name="shop_type4">Supermarket</string>
+
+    <string name="shop_name5">Babylon</string>
+    <string name="shop_address5">Kosmonavtov Ave., 2/2</string>
+    <string name="shop_working_hours5">10:00 - 22:00</string>
+    <string name="shop_type5">Family mall</string>
+
+
+
+
+
+    <string name="monumnet_name1">The Folclor Sculptural Composition</string>
+    <string name="monument_address1">Bolshaya Sadovaya, 43</string>
+    <string name="monument_dedicated1">Merchant-Peddler and his Cat</string>
+    <string name="monument_buit1">2006</string>
+
+    <string name="monumnet_name2">Monument Tachanka</string>
+    <string name="monument_address2">Vostochnoye Hwy.</string>
+    <string name="monument_dedicated2">The First Cavalry Army during the Civil War.</string>
+    <string name="monument_buit2">1977</string>
+
+    <string name="monumnet_name3">A.S. Pushkin Monument</string>
+    <string name="monument_address3">Pushkinskaya St.</string>
+    <string name="monument_dedicated3">A.S. Pushkin</string>
+    <string name="monument_buit3">1959</string>
+
+    <string name="monumnet_name4">Monument Rostovite</string>
+    <string name="monument_address4">Beregovaya St.</string>
+    <string name="monument_dedicated4">Symbolizing the beauty of Rostov women</string>
+    <string name="monument_buit4">1984</string>
+
+    <string name="monumnet_name5">Memorial Zmiyovskaya Balka</string>
+    <string name="monument_address5">Zmiyovskiy Drive</string>
+    <string name="monument_dedicated5">Victims of the WWII in Rostov-on-Don</string>
+    <string name="monument_buit5">1975</string>
+
+
+
+
+    <string name="church_name1">Greek Cathedral of the Annunciation</string>
+    <string name="church_address1">Kirovskiy Ave., 57</string>
+    <string name="church_confession1">Russian Orthodox</string>
+    <string name="church_buit1">2014</string>
+
+    <string name="church_name2">Old-Intercession Church</string>
+    <string name="church_address2">Bolshaya Sadovaya, 113B</string>
+    <string name="church_confession2">Russian Orthodox</string>
+    <string name="church_buit2">2007</string>
+
+    <string name="church_name3">St. Kazan Church</string>
+    <string name="church_address3">Kosmonavtov Ave., 16A</string>
+    <string name="church_confession3">Russian Orthodox</string>
+    <string name="church_buit3">1931</string>
+
+    <string name="church_name4">Church of Holy Hierarch Dimitry</string>
+    <string name="church_address4">Muravyev, 28B</string>
+    <string name="church_confession4">Russian Orthodox</string>
+    <string name="church_buit4">1999</string>
+
+    <string name="church_name5">Church of Saint Seraphim of Sarov</string>
+    <string name="church_address5">Port str., 72a</string>
+    <string name="church_confession5">Russian Orthodox</string>
+    <string name="church_buit5">1911</string>
+
+
+
+
+    <string name="restaurant_name1">Ukha</string>
+    <string name="restaurant_address1">Teatralnaya Sq., 3</string>
+    <string name="restaurant_working_hours1">12:00 - 01:00</string>
+    <string name="restaurant_cuisine1">Local Russian, European</string>
+
+    <string name="restaurant_name2">Grill-Bar New York</string>
+    <string name="restaurant_address2">Bolshaya Sadovaya St., 113</string>
+    <string name="restaurant_working_hours2">12:00 - 03:00</string>
+    <string name="restaurant_cuisine2">European, Vegetarian Friendly</string>
+
+    <string name="restaurant_name3">Onegin Dacha</string>
+    <string name="restaurant_address3">Chekhova ave, 45B</string>
+    <string name="restaurant_working_hours3">09:00 - 00:00</string>
+    <string name="restaurant_cuisine3">Seafood, European, Russian</string>
+
+    <string name="restaurant_name4">Legendy Kavkaza</string>
+    <string name="restaurant_address4">Kayani, 11 B</string>
+    <string name="restaurant_working_hours4">12:00 - 00:00</string>
+    <string name="restaurant_cuisine4">European, Armenian, Caucasian</string>
+
+    <string name="restaurant_name5">Kan Sin</string>
+    <string name="restaurant_address5">Sotsialisticheskaya St., 186/59</string>
+    <string name="restaurant_working_hours5">12:00 - 23:00</string>
+    <string name="restaurant_cuisine5">Chinese</string>
+
+
 </resources>
